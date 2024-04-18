@@ -9,7 +9,7 @@ print('-'*70) # firula
 print('Estudo de variáveis')
 print('='*70) # firual
 
-# As Variáveis são declaradas por inferência
+# As Variáveis são declaradas por Inferência
 nome = 'Jonh Doe'
 nascimento = 1970
 altura = 1.80
