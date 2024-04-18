@@ -4,7 +4,7 @@
 # Primeiro Programa em Python
 
 
-# Importando as bibliotecas
+# Importando as Bibliotecas
 import os
 
 
