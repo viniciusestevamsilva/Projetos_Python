@@ -3,19 +3,20 @@
 # Autor: Vinícius Estevam da Silva
 # Data: 18/04/2024
 
-# d. Faça um programa que receba e divida 2 números. A saída da divisão precisará ser formatada com 4 casas decimais
-
 #Imports
 import os
 
+#Limpar terminal
 os.system('cls')
 
-# Entrada
 print('='*70)
 print('Insira os numeros')
 print('='*70)
+
+# Entrada
 dividendo = float(input('Coloque o dividendo: '))
 divisor = float(input('Coloque o divisor: '))
+
 
 # Processamento
 quociente = dividendo / divisor
@@ -24,4 +25,5 @@ quociente = dividendo / divisor
 print('='*70)
 print('RESULTADO')
 print('='*70)
-print(f'A divisao dos valores {dividendo} / {divisor} é: {quociente}')
+print(f'A divisao dos valores {dividendo} / {divisor} é: {quociente :.4f}')
+print('')

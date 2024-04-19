@@ -8,18 +8,16 @@ import os
 
 os.system('cls')
 
-# Entrada
+#Entrada
 print('-'*70)
-print('Insira o numero')
+print('Converter real em dolar')
 print('-'*70)
-numero = int(input('Coloque o numero aqui: '))
+real = int(input('Coloque o valor da nota REAL: '))
 
-# Processamento
-dobro = numero *2
-triplo = numero *3
+#Processamento
+valor = real / 5.22
 
-#Saida
 print('-'*70)
 print('RESULTADO')
 print('-'*70)
-print(f'o dobro do {numero} é {dobro} e o triplo é {triplo}')
+print(f'no final o real está valendo {valor} dolares')
