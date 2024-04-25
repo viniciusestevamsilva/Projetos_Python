@@ -1,6 +1,6 @@
 # Curso de desenvolbimento de sistemas
 # Turma 0152
-# Autor: Viícius Estevam da Silva
+# Autor: Vinícius Estevam da Silva
 # Estudo de condicionais: Parte 1
 # Objetivo: Verificando um valor decimal
 
