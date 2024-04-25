@@ -18,10 +18,9 @@ resposta = ''
 
 # Condicional
 if valor % 2 == 0:
-    valor = int(valor)
-    resposta = f'Entrada incorreta, o valor {valor} é um inteiro!'
+    resposta = f'O número {valor} é par'
 else:
-    resposta = f'Entrada correta, o valor {valor} é decimal!'
+    resposta = f'O número {valor} é impar!'
 
 # Saida
 print('='*70)
