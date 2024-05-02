@@ -15,10 +15,20 @@ print('Monitoramento de salarios')
 print('='*70)
 
 salario = float(input('Digite seu salario atual: '))
-aumento = salario / 5 * 1500
-aum = salario / 100 * 1000.00
 
 
-if salario > aumento:
-    print('seu salario recebeu um aumento de 5%')
-    
+#processos
+aumento1 = (5 / 100) * salario
+aum1 = aumento1 + salario
+
+aumento2 = (10 / 100) * salario
+aum2 = aumento2 + salario
+
+#Condicional
+if salario >= 1500.00:
+    print(f'seu salario recebeu um aumento de 5% {aum1}')
+elif salario <= 1000.00:
+    print(f'seu salario recebeu um aumento 5 $ {aum2}')
+else:
+    print(f'o salario {salario} esta errado')
+
