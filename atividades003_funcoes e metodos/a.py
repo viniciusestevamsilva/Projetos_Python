@@ -23,10 +23,8 @@ arredondar_para_cima = math.ceil(radicando)
 arredondar_para_baixo = math.floor(radicando)
 
 # 
-if radicando < 0 or radicando == 0:
+if radicando <= 0:
     print('esse valor não é valido')
-elif radicando 
-    
 else:
     print(f'A raiz quadrada de {radicando} é:{raizQuadrada}')
 print('-'*70)
