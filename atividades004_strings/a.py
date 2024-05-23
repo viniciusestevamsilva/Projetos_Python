@@ -1,3 +1,7 @@
+# Curso Desenvolvimento de sistemas
+# Autro : Vinícius Estevam da Silva
+# Data 22/06/2024
+
 import os
 
 os.system('cls')
