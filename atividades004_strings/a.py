@@ -19,6 +19,7 @@ nome_inteiro = (primeiro_nome) + (" ") + (sobrenome)
 nome_completo = nome_inteiro
 nome_inteiro.split()
 
+
 #SAIDA
 print(f'Seu nome é {nome_inteiro}')
 print('.'*70)
