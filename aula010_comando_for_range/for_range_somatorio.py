@@ -17,6 +17,7 @@ for var_iteradora in range(0, 4):
     # Cálculo
     soma += numero # mesmo coisa: soma + numero
 
+
 print('-'*70)
 print(f'A soma dos números é: {soma}')
 print('-'*70)
