@@ -19,5 +19,6 @@ for var_iteradora in range(0,4):
     else:
         print(f'O número {numero} é impar')
 
+
 print('-'*50)
 print()
