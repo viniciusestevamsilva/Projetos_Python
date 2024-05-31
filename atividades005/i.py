@@ -1,6 +1,6 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data 30/06/2024
+# Data 31/06/2024
 
 #Importando biblioteca
 import os
@@ -13,8 +13,9 @@ print('-'*70)
 print('Digitar f ate sair se não continua em looping')
 print('-'*70)
 
+# ciclo e validação
 while (True):
-    
+    # tranformar tudo digitado em minusculo
     nome = str(input('Digite um nome [digite "f" para Sair]: ')).lower()
     
     if (nome != 'f'):
