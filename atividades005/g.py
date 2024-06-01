@@ -1,29 +1,31 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data 31/06/2024
+# Data 01/06/2024
 
-#INCOMPLETOOOO
-
-# Importando biblioteca
+#Importando biblioteca
 import os
 
 
 os.system('cls')
 
-# Entrada
+#Entrada
 print('-'*70)
-print('Número par ou impar')
+print('Calcular os números primos no intervalo pré-determinado pelo usuário')
+print('='*70)
+
+
+comeco = int(input('Digite o valor do começo: '))
+final = int(input('Digite o valor do final: '))
+
+
+contador_primo = comeco
+
+
+while contador_primo <= final:
+    contador_primo += 1
+#verificando se e primo
+    if ( contador_primo / contador_primo ) and (contador_primo / 1):
+        print(f' O número {contador_primo} é primo!')
+        
 print('-'*70)
-
-# ciclo
-for c in range(0,4):
-    numero = int(input(f'{c + 1}º número: '))
-    
-    if (numero % 2 == 0):
-        print(f'O número {numero} que digitou é par')
-    else:
-        print(f'O número {numero} que digitou é impar')
-
-
-print('-'*50)
 print()

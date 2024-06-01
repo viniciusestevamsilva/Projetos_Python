@@ -1,6 +1,6 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data 31/06/2024
+# Data 01/06/2024
 
 #Importando biblioteca
 import os
@@ -10,7 +10,7 @@ os.system('cls')
 
 #Entrada
 print('-'*70)
-print('Digitar f ate sair se não continua em looping')
+print('Digitar f ate sair, se não continua em looping')
 print('-'*70)
 
 # ciclo e validação
@@ -19,10 +19,10 @@ while (True):
     nome = str(input('Digite um nome [digite "f" para Sair]: ')).lower()
     
     if (nome != 'f'):
-        print('Estou em looping')
+        print('Estou em looping... para sair digite "f"')
     else:
         print('-'*70)
-        print('Você digitou "f" para sair do looping')
+        print('Você digitou "f" para sair do looping!')
         
         break
 
