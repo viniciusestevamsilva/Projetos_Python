@@ -8,7 +8,7 @@ import os
 os.system('cls')
 
 print('-'*70)
-print('Programa que imprime os números pares entre 0 e 100')
+print('Números pares entre 0 e 100')
 print('='*70) 
 
 contador = 0 

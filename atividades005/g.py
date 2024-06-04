@@ -13,19 +13,22 @@ print('-'*70)
 print('Calcular os números primos no intervalo pré-determinado pelo usuário')
 print('='*70)
 
-
 comeco = int(input('Digite o valor do começo: '))
 final = int(input('Digite o valor do final: '))
+print('-'*70)
 
+# Validação
+if comeco < 2:
+    comeco = 2
+    print("Coloque um valor no inicio maior que 2, ja que não existe primo menor que 2")
+    print('-'*70)
+    #Processamento
+for primo in range(comeco, final):
+    for divisor in range(2, int(primo**0.5) + 1): # Verifica se é divisivel por 1 e por ele mesmo
+        if primo % divisor == 0:# verificando se é primo, se o resto for 0, é primo
+            break
+    else:
+            print(primo)
 
-contador_primo = comeco
-
-
-while contador_primo <= final:
-    contador_primo += 1
-#verificando se e primo
-    if ( contador_primo / contador_primo ) and (contador_primo / 1):
-        print(f' O número {contador_primo} é primo!')
-        
 print('-'*70)
 print()

@@ -8,7 +8,7 @@ import os
 os.system('cls')
 
 print('-'*70)
-print('Programa que imprima os números no intervalo entre 1 e 10 em ordem decrescente')
+print('Imprimi o intervalo entre 1 e 10 em ordem decrescente')
 print('='*70) 
 
 inicio = 1

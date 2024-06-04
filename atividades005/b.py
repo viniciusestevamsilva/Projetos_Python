@@ -8,7 +8,7 @@ import os
 os.system('cls')
 
 print('-'*70)
-print('Programa anterior porem com input')
+print('Mesma coisa de antes com input')
 print('='*70) 
 
 inicio = int(input('Digite o valor inicial: '))

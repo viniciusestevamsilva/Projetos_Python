@@ -1,4 +1,4 @@
-# Curso Desenvolvimento de sistemas
+# Curso de Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
 # Data 01/06/2024
 
@@ -12,21 +12,25 @@ print('-'*70)
 print('3 números não serão impressos1')
 print('-'*70)
 
-começo = int(input("Digite o numero do começo do intervalo: "))
-fim = int(input("Digite o numero final do intervalo: "))
+comeco = int(input("Digite o numero do começo do intervalo: "))
+final = int(input("Digite o numero final do intervalo: "))
 
-ign1 = int(input("Digite o 1º que sera ignorado: "))
-ign2 = int(input("Digite o 2º que sera ignorado: "))
-ign3 = int(input("Digite o 3º que sera ignorado: "))
+print('-'*70)
 
+ignorar_1º = int(input("Digite o 1º que sera ignorado: "))
+ignorar_2º = int(input("Digite o 2º que sera ignorado: "))
+ignorar_3º = int(input("Digite o 3º que sera ignorado: "))
 
-contador = começo
+print('-'*70)
 
+# Declaração
+contador = comeco
 
-# Imprime os valores no intervalo, ignorando os números que o usuario digitou
-while contador <= fim:
-    if contador != ign1 and contador != ign2 and contador != ign3:
+# Saída
+while contador <= final:
+    # Ignora os números que o usuario digitou
+    if contador != ignorar_1º and contador != ignorar_2º and contador != ignorar_3º:
         print(f'{contador}')
     contador += 1
     
-print()
+print('-'*70)
