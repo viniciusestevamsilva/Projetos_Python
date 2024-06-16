@@ -1,6 +1,6 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data /06/2024
+# Data 16/06/2024
 
 import os
 
@@ -19,3 +19,4 @@ print('''
     # • O produto dos intervalos 5-6 por 11-12
 ''')
 print('-'*70)
+

@@ -14,7 +14,7 @@ print('='*70)
 print('TENTE ADIVINHAR EM QUAL NUMERO ESTOU PENSANDO (1 a 30)')
 print('='*70)
 
-numero = int(input('Qual número estou pensando?: '))
+numero = int(input('Qual número estou pensando?: ')) 
 
 # Processamento
 numero_aleatorio = random.randint(1, 30)

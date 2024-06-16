@@ -17,3 +17,32 @@ print('''
     # • Calcule e mostre a média das notas.')
 ''')
 print('-'*70)
+
+notas = []
+soma = 0
+
+entrada = input('Insira as notas separadas por espaço: ').strip()
+
+nota = entrada.split()
+notas.extend(nota)
+
+quantidade_notas = len(notas)
+print(f'Foram inseridas {quantidade_notas} notas') 
+print()
+print(f'As notas são: {notas}') 
+print()
+
+inverso_notas = notas[::-1] 
+print('Na ordem inversa e sobrepostas elas ficam dessa forma: ')
+for nota in inverso_notas: 
+    print(nota)
+
+
+for nota in notas:
+    soma += int(nota) 
+
+print()
+print(f'Soma total das notas: {soma}')
+media = soma / quantidade_notas 
+print()
+print(f'Média das notas: {media:.2f}')

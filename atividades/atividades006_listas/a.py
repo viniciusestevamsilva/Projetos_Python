@@ -1,6 +1,6 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data /06/2024
+# Data 12/06/2024
 
 import os
 
