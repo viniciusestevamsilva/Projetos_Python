@@ -1,6 +1,6 @@
 # Curso Desenvolvimento de sistemas
 # Autro : Vinícius Estevam da Silva
-# Data /06/2024
+# Data 17/06/2024
 
 import os
 
@@ -8,20 +8,23 @@ import os
 os.system('cls')
 
 print('-'*70)
-print('Ler uma lista com 10 números, depois apresente o maior e o menor número da lista')
+print('''
+      Ler uma lista com 10 números, depois apresente o maior e o menor número da lista
+      ''')
 print('-'*70)
 
-lista_numeros = []
+lista_numeros = [] # lista vazia
 
-entrada = input('Insira 10 valores separados por vírgula: ').replace(' ','')
-
+# entrada
+entrada = input('Insira 10 valores: ')
+# separando valores com ","
 numeros = entrada.split(',')
 
-lista_numeros.extend([int(numero) for numero in numeros])
-
-
+# iterando a lista
+lista_numeros.extend([(numero) for numero in numeros])
 lista_numeros.sort()
 
+# saida
 print()
 print(f'Lista completa: {lista_numeros}')
 menor = lista_numeros[0]

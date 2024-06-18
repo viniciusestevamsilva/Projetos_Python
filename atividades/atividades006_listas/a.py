@@ -8,7 +8,9 @@ import os
 os.system('cls')
 
 print('-'*70)
-print('Crie a lista [1, 2, 3, 5, 6] e depois insira o valor que está faltando na posição correta.')
+print('''
+      Crie a lista [1, 2, 3, 5, 6] e depois insira o valor que está faltando na posição correta.
+      ''')
 print('-'*70)
 
 # Entrada
