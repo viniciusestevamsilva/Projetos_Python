@@ -14,10 +14,6 @@ print('''
       ''')
 print('-'*80)
 
-# listas 
-lista_ascendente = []
-lista_descendente = []
-
 # Lista gerando numeros aleatorios ate 10 dentro dela
 ascendente = [random.randint(0, 100) for ascendente in range(10)]
 descendente = [random.randint(0, 100) for descendente in range(10)]
@@ -26,15 +22,9 @@ descendente = [random.randint(0, 100) for descendente in range(10)]
 ascendente.sort()
 descendente.sort(reverse = True)
 
-# iterando a lista
-lista_ascendente.extend(ascendente)
-lista_descendente.extend(descendente)
-
-
-
 # Numeros crescentes
-print(f"Lista ordenada em ordem ascendente: {lista_ascendente}")
+print(f"Lista ordenada em ordem ascendente: {ascendente}")
 print('-'*80)
 #Numeros decrecentes
-print(f"Lista ordenada em ordem descendente: {lista_descendente}")
+print(f"Lista ordenada em ordem descendente: {descendente}")
 print('-'*80)
