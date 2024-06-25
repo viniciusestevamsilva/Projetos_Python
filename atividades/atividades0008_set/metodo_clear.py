@@ -22,31 +22,81 @@ print('/'*70)
 
 while (True):
     
-    conjunto = set([1,2,3,4]) # Criando um SET()
-    print('Conjunto:',conjunto)
-    print('Caso queira parar, digite "sair"')
+    # Criando um SET()
+    conjunto1 = set([1,2,3,4])
+    conjunto2 = set(['Pedro','Taiz','Bruno'])
+    conjunto3 = set([1,2,6,'Jonas',6,'mike','Bruno'])
+    
+    print('Conjunto de Números:',conjunto1)
+    print('Conjunto de Nomes:',conjunto2)
+    print('Conjunto Misto:',conjunto3)
+    print('Caso queira parar, digite "@"')
     print('='*70)
-    for i in range(1,5):
-    
-        elementos = input('Digite um elemento:  ').replace(' ', ',')
-        print('-'*70)
-        # Adiciona elementos ao conjunto
-        conjunto.add(elementos)
-        if elementos == "sair":
-            print('Você saiu do programa.')
-            print('/'*70)
-            break
-    
     print()
-    print(f'Conjunto antes do CLEAR():  {conjunto}')
-     # Remove todos os elementos do conjunto
-    conjunto.clear()
-    
-    # Imprimi  "set()" ja que o conjunto está vazio
-    print(f'Conjunto Depois do CLEAR():  {conjunto}')
+    print('Comandos: "A" "B" "C"')
+    entrada = str(input('Digite qual conjunto deseja alterar:  ')).upper()
     print()
-    break # "Quebra" finaliza o programa
+    print('Será adicionado 5 elementos ao conjunto.')
+    print('-'*70)
+    
+    if entrada == 'A':
+        for i in range(1,5):
+            elementos = input('Digite o elemento que será adicionar ao conjunto:\n')
+            conjunto1.add(elementos)#  Adiciona elementos ao conjunto
+            if elementos == '@':
+                print()
+                print('Você saiu do programa')
+                print('/'*70)
+                break
+        print()
+        print(f'Conjunto antes do CLEAR():  {conjunto1}')
+        # Remove todos os elementos do conjunto
+        conjunto1.clear()
+        
+        # Imprimi  "set()" ja que o conjunto está vazio
+        print(f'Conjunto Depois do CLEAR():  {conjunto1}')
+        print()
+        break
+        
+    if entrada == 'B':
+        for i in range(1,5):
+            elementos = input('Digite o elemento quer adicionar ao conjunto:\n')
+            conjunto2.add(elementos)#  Adiciona elementos ao conjunto
+            if elementos == '@':
+                print()
+                print('Você saiu do programa')
+                print('/'*70)
+                break
+        print()
+        print(f'Conjunto antes do CLEAR():  {conjunto2}')
+        # Remove todos os elementos do conjunto
+        conjunto2.clear()
+        
+        # Imprimi  "set()" ja que o conjunto está vazio
+        print(f'Conjunto Depois do CLEAR():  {conjunto2}')
+        print()
+        break
+    
+    if entrada == 'C':
+        for i in range(1,5):
+            elementos = input('Digite o elemento que será adicionar ao conjunto:\n')
+            conjunto3.add(elementos)#  Adiciona elementos ao conjunto
+            if elementos == '@':
+                print()
+                print('Você saiu do programa')
+                print('/'*70)
+                break
 
+        print()
+        print(f'Conjunto antes do CLEAR():  {conjunto3}')
+        # Remove todos os elementos do conjunto
+        conjunto3.clear()
+        
+        # Imprimi  "set()" ja que o conjunto está vazio
+        print(f'Conjunto Depois do CLEAR():  {conjunto3}')
+        print()
+        break
+    
 print('-'*70)
 print('Fim do Programa.')
 print('-'*70)
