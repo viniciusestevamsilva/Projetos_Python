@@ -1,5 +1,5 @@
-# Curso Desenvolvimento de sistemas
-# Autro : Vinícius Estevam da Silva
+# Curso de Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
 # Data 16/06/2024
 
 import os
