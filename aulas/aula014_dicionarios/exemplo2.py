@@ -58,7 +58,7 @@ while True:
                 novo_simbolo = str(input(f'Digite o novo simbolo para'
                 f'{simbolo} (ou deixe em branco para manter o atual): '))
                 novo_nome = str(input(f'Digite o novo nome para'
-                f'{simbolo} (ou deixe em brano para manter o atual):'))
+                f'{nome} (ou deixe em brano para manter o atual):'))
                 
                 # Atualiza o simbolo e o nome se fornecidos
                 if novo_simbolo:
