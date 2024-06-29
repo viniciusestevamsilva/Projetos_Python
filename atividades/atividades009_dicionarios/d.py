@@ -1,4 +1,10 @@
 # Faça um programa para criar um dicionário com 5  cores. Depois,  imprima as chaves e os valores deste dicionário.
 # Curso de Desenvolvimento de sistemas
 # Autor : Vinícius Estevam da Silva
-# Data
+# Data 28/06/24
+import os
+
+
+os.system('cls')
+
+cores = dict()
