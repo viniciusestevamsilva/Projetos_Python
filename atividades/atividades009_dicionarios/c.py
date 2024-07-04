@@ -18,10 +18,10 @@ while True:
     print('')
     print('')
     print("1. Adicionar um par chave-valor")
-    print("2. Remover um item usando pop()")
+    print("2. Remover um item")
     print("s. Sair")
     
-    opcao = input("Escolha uma opção (1-4): ")
+    opcao = input("Escolha uma opção (1-2): ")
     
     if opcao == '1':
         os.system('cls')
@@ -40,7 +40,7 @@ while True:
             print(f"Item removido: {chave}: {valor_removido}")
         else:
             os.system('cls')
-            print("O dicionario está vazio. Adicione itens primeiro.")
+            print("O dicionario está vazio..")
     elif opcao == 's':
         os.system('cls')
         print("Fim do programa.")
