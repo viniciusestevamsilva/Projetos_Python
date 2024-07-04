@@ -27,8 +27,8 @@ while True:
 
     if comando == 'A':
         print('-'*70)
-        item = str(input('Nome do elemento: '))
-        slot = str(input('Simbolo do elemento: '))
+        item = str(input('Nome do item: '))
+        slot = str(input('Slot do item: '))
         print('='*70)
         
         inventario['item'] = item
