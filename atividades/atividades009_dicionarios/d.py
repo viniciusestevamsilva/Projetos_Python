@@ -1,7 +1,7 @@
 # Faça um programa para criar um dicionário com 5  cores. Depois,  imprima as chaves e os valores deste dicionário.
 # Curso de Desenvolvimento de sistemas
 # Autor : Vinícius Estevam da Silva
-# Data 28/06/24
+# Data 01/06/24
 import os
 
 
