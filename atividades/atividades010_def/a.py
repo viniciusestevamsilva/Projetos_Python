@@ -1,5 +1,11 @@
+# Curso de Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
+# Data 30/07/2024
+
 # Crie uma função que receba uma lista de números. Depois retorne duas listas com os números pares,
 # os números ímpares, a quantidade de números pares e a quantidade de números ímpares.
+# Faça um programa para criar um dicionário com 4 elementos.
+
 import os
 
 

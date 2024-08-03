@@ -1,3 +1,7 @@
+# Curso de Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
+# Data 30/07/2024
+
 # Crie uma função que receba uma temperatura em fahrenheit e retorne o valor em graus célsius.
 import os
 

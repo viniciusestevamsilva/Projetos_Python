@@ -1,3 +1,7 @@
+# Curso de Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
+# Data 30/07/2024
+
 # Crie uma função que cadastre o nome de uma aluno, a matrícula e a data de nascimento.
 # Depois imprima os resultados cadastrados utilizando uma estrutura de repetição for.
 import os
