@@ -18,7 +18,7 @@ lista = [0,1,2,3,4,5,6,7,8,9]
 
 
 def par_impar(lista):
-    """separanod par e impar
+    """separando par e impar
 
     Args:
         lista (*list): lista de numeros
@@ -37,7 +37,6 @@ def par_impar(lista):
             impares = num
             impar.append(impares)
             quantidade_i = len(impar)
-
     print(f'Pares : {par}')
     print(f'Quantidade de pares: {quantidade_p}')
     print(f'Impares: {impar}')
