@@ -12,13 +12,13 @@ lista = [
 ]
 
 # Caminho para apasta onde o arquivo CSV será salvo
-pasta = 'arquivos_csv/gravacao/'
+pasta = 'aulas/gravacao/'
 
 # Verificando se a pasta existe, não irá criá-la
 os.makedirs(pasta, exist_ok=True)
 
 # nome para o arquivo CSV para gravar as infromações
-arquivo = 'arquivos_csv/gravacao/alunas.csv'
+arquivo = 'aulas/gravacao/alunas.csv'
 
 # caminho completo do arquivo CSV
 caminho_arquivo = os.path.join(pasta, arquivo)
@@ -31,7 +31,7 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     
     # campos = ["names", "telefone", "cidade"]: define a lista de nomes de campos
     # (cabeçalhos das colunas do CSV).
-    campos = ['nomes', 'telefone', 'cidade']
+    campos = ['nome', 'telefone', 'cidade']
     
     # writer = csv.DictWriter(arquivo_csv, fieldnames=campos):
     # Cria um objeto DictWriter que usará 'arquivo_csv' para gravar os campos.
@@ -45,7 +45,7 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     
     # writer.writerows(lista): grava todas as linhas da lista no arquivo CSV
     # cada dicionario em 'lista' se torna  uma linha de arquivo.
-    escrever.writerow(lista)
+    escrever.writerows(lista)
     
 os.system('cls')
 # exibe uma mensagem indicando que o arquivos foi gravado com sucesso
