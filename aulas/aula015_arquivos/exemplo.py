@@ -3,7 +3,7 @@ import os
 
 
 # Nome do arquivo CSV
-arquivo = 'aulas/aula017_arquivos/alunas.csv'
+arquivo = 'aulas/aula015_arquivos/alunas.csv'
 
 # Lista para armazenar os dados
 lista = []
