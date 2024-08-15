@@ -4,7 +4,7 @@ import os
 
 os.system('cls')
 
-arquivo = 'aulas/aula013_arquivos/alunas.csv'
+arquivo = 'aulas/aula014_arquivos/alunas.csv'
 nome_para_apagar = input('Digite o nome que deseja apagar: ')
 
 #Lendo  os dados do arquivos
