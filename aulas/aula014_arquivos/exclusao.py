@@ -18,7 +18,7 @@ novo_cadastro = [registro for registro in cadastro \
                 if registro['nome'] != nome_para_apagar]
 
 if len(novo_cadastro) < len(cadastro):
-    apagado = True
+    apagando = True
 
 # Reecrevendo o arquivo com os dados atualizados
 with open(arquivo, 'w', newline='') as arquivo_csv:
@@ -28,7 +28,7 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     escrever.writeheader()
     escrever.writerows(novo_cadastro)
 print('-'*70)
-if apagado:
+if apagando:
     print(f'Registro com nome {nome_para_apagar} apagado com sucesso.')
 else:
     print(f'Registro com nome {nome_para_apagar} não encontrado.')
