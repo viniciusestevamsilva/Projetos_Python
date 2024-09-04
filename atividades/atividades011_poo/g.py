@@ -1,6 +1,6 @@
 # Curso de Desenvolvimento de sistemas
 # Autor : Vinícius Estevam da Silva
-# Data //
+# Data 03/09/24
 import os
 
 class Converter():
@@ -9,17 +9,10 @@ class Converter():
         
     def metro_centimetro(self, metro):
         centimetro = metro*100
-        print('='*70)
-        print(f'A converção de metros para milimetro é {centimetro}')
-        print('')
         return centimetro
         
     def metro_milimetro(self, metro):
         milimetro = metro*1000
-        print(f'A converção de metros para milimetro é {milimetro}')
-        print('')
-        print('/'*70)
-        
         return milimetro
 
 os.system('cls')
@@ -31,3 +24,10 @@ metro = int(input('Coloque o numero em metros: '))
 convercao = Converter(metro)
 cm = convercao.metro_centimetro(metro)
 ml = convercao.metro_milimetro(metro)
+
+print('='*70)
+print(f'A converção de {metro} metros para milimetro é {cm}')
+print('')
+print(f'A converção de {metro} metros para milimetro é {ml}')
+print('')
+print('/'*70)

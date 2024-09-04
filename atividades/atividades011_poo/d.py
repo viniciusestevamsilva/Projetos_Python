@@ -1,6 +1,6 @@
 # Curso de Desenvolvimento de sistemas
 # Autor : Vinícius Estevam da Silva
-# Data //
+# Data 03/09/24
 import os
 
 #Limpar terminal
