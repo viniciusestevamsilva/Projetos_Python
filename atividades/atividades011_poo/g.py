@@ -15,19 +15,41 @@ class Converter():
         milimetro = metro*1000
         return milimetro
 
-os.system('cls')
-print('/'*70)
-print('Converter centimetros para metros e\nMilimetros para metros')
-print('='*70)
-metro = int(input('Coloque o numero em metros: '))
-
-convercao = Converter(metro)
-cm = convercao.metro_centimetro(metro)
-ml = convercao.metro_milimetro(metro)
-
-print('='*70)
-print(f'A converção de {metro} metros para milimetro é {cm}')
-print('')
-print(f'A converção de {metro} metros para milimetro é {ml}')
-print('')
-print('/'*70)
+while True:
+    
+    os.system('cls')
+    
+    print('/'*70)
+    print('Converter centimetros para metros e\n Milimetros para metros')
+    print('='*70)
+    metro = int(input('Coloque o numero em metros: '))
+    convercao = Converter(metro)
+    opcao = input('Deseja converter para milimetros(ml)\n ou centimetros(cm?')
+    if opcao.isnumeric() or opcao == '':
+        print('Digite algo valido')
+        input('Pressioe enter para voltar')
+        
+    if opcao == 'cm':
+        
+        cm = convercao.metro_centimetro(metro)
+        
+        os.system('cls')
+        
+        print('='*70)
+        print(f'A converção de {metro} metros para milimetro é {cm}')
+        print('')
+        input('Pressioe enter para voltar')
+        
+    elif opcao == 'ml':
+        
+        ml = convercao.metro_milimetro(metro)
+        
+        os.system('cls')
+        
+        print(f'A converção de {metro} metros para milimetro é {ml}')
+        print('')
+        print('/'*70)
+        input('Pressioe enter para voltar')
+    else:
+        print('Coloque algo valido')
+        input('Pressioe enter para voltar')

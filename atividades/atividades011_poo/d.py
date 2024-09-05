@@ -3,7 +3,6 @@
 # Data 03/09/24
 import os
 
-#Limpar terminal
 
 class Quociente():
     def __init__(self, dividendo, divisor):
