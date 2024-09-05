@@ -6,16 +6,16 @@ import os  # Importanto bibliotecas
 
 class Conta():  # Criando a classe
     def __init__(self, a, b, c):  # Metodo construtor
-        self.a = a
+        self.a = a # Atributos
         self.b = b
         self.c = c
 
     # Metodos
-    def soma(self, a, b, c):  # Função para somar
+    def soma(self, a, b, c):  # Metodod para somar
         soma = a + b + c
         return soma
 
-    def multiplicar(self, a, b, c):  # Função para multiplicar
+    def multiplicar(self, a, b, c):  # Metodo para multiplicar
 
         multiplicar = a * b * c
         return multiplicar
@@ -72,7 +72,6 @@ while True:
         print('Programa Finalizado')
         print('/'*70)
         break
-    
     elif opcao.isnumeric() or opcao == '':
         
         print('-'*70)

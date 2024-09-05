@@ -18,11 +18,17 @@ class Data():
     
 
 os.system('cls')
-nascimento = int(input('Data de nascimento: '))
+
+print('/'*70)
+print('Mostrar sua idade(ano)')
+print('='*70)
+nascimento = int(input('Sua data de nascimento: '))
 data = Data(nascimento)
 
+os.system('cls')
+    
 print('-'*70)
 print()
 print('Resultado')
 print(f'voce tem {data.idade(nascimento)} de anos')
-print('='*70)
+print('/'*70)
