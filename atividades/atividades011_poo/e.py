@@ -3,17 +3,18 @@
 # Data 03/09/24
 import os
 
-class Sucessor_anterior():
-    def __init__(self, numero):
+
+class Sucessor_anterior(): # Criando a classe
+    def __init__(self, numero): # Metodo construtor
         self.numero = numero
         
-    def resultado_sucessor(self, numero):
+    def resultado_sucessor(self, numero): # Metodo para o sucessor
         sucessor = numero + 1
         
         return sucessor
     
     
-    def resultado_anterior(self, numero):
+    def resultado_anterior(self, numero): # metodo para o antecessor
         antecessor = numero - 1
         
         return antecessor
@@ -26,7 +27,7 @@ print('Coloque um numero')
 print('-'*70)
 numero = int(input('Digite um numero: '))
 
-resposta = Sucessor_anterior(numero)
+resposta = Sucessor_anterior(numero) # Variavle recebdno a instancia da classe
 sucessor = resposta.resultado_sucessor(numero)
 anterior = resposta.resultado_anterior(numero)
 

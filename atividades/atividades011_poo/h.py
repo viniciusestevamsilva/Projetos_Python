@@ -3,11 +3,12 @@
 # Data 03/09/24
 import os
 
-class Tabuada:
-    def __init__(self, valor):
+
+class Tabuada: # Criando a classe
+    def __init__(self, valor): # Metodo construtor
         self.valor = valor
         
-    def multiplicar(self, valor):
+    def multiplicar(self, valor): # metodo para multiplicar
         for c in range(1,11):
             resultado = valor*c
             print(f'{valor} x {c} = {resultado}')
@@ -28,7 +29,7 @@ while True:
             print('')
             print(f'Tabuada do {valor} ate 10')
             print('='*70)
-            resposta = Tabuada(valor)
+            resposta = Tabuada(valor) # variavel recebendo a instancia de uma classe
             resto = resposta.multiplicar(valor)
             print('')
             print('/'*70)

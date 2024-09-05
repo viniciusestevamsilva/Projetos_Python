@@ -3,13 +3,14 @@
 # Data 03/09/24
 import os
 
-class Retangulo():
-    def __init__(self, altura, largura):
-        self.altura = altura
+
+class Retangulo(): # Criando uma classe
+    def __init__(self, altura, largura): # metodo construtor
+        self.altura = altura # atributos
         self.largura = largura
         
     
-    def calcular(self, altura, largura):
+    def calcular(self, altura, largura): # metodo para verificar o perimetro
         perimetro = (altura + largura)*2
         
         return perimetro
@@ -23,7 +24,7 @@ print('='*70)
 altura = float(input('Digite a altura: '))
 largura = float(input('Digite a largura: '))
 
-resposta = Retangulo(altura, largura)
+resposta = Retangulo(altura, largura) # variavel recebendo a instancia de uma classe
 resultado = resposta.calcular(altura, largura)
 
 print('')

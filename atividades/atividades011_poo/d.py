@@ -4,12 +4,12 @@
 import os
 
 
-class Quociente():
-    def __init__(self, dividendo, divisor):
-        self.dividendo = dividendo
+class Quociente(): # Criando a classe
+    def __init__(self, dividendo, divisor): # metodo construtor
+        self.dividendo = dividendo # atributos
         self.divisor = divisor
         
-    def resultado(self, dividendo, divisor):
+    def resultado(self, dividendo, divisor): # metodo para calcular
         quociente = dividendo / divisor
         
         return quociente
@@ -25,7 +25,7 @@ print('='*70)
 dividendo = float(input('Coloque o dividendo: '))
 divisor = float(input('Coloque o divisor: '))
 
-resultado = Quociente(dividendo, divisor)
+resultado = Quociente(dividendo, divisor)# variavel recebeno a instancia da classe
 resto = resultado.resultado(dividendo, divisor)
 
 # Saida

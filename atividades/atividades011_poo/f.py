@@ -3,16 +3,17 @@
 # Data 03/09/24
 import os
 
-class Conta():
-    def __init__(self, numero):
-        self.numero = numero
+
+class Conta(): # Criando a classe
+    def __init__(self, numero): # Metodo construtor
+        self.numero = numero # Atributos
         
-    def dobro(self, numero):
+    def dobro(self, numero): # Metodo para calcular o dobro
         dobro = numero * 2
         return dobro
     
     
-    def triplo(self, numero):
+    def triplo(self, numero): # Metodo para calcular o triplo
         triplo = numero * 3
         return triplo
 
@@ -22,7 +23,7 @@ print('Insira o seu valor')
 print('='*70)
 numero = int(input('Coloque o numero aqui: '))
 
-resposta = Conta(numero)
+resposta = Conta(numero) # variavel recebeno a instancia da classe
 x2 = resposta.dobro(numero)
 x3 = resposta.triplo(numero)
 

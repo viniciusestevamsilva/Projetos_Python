@@ -3,14 +3,14 @@
 # Data 03/09/24
 import os
 
-class Media():
-    def __init__(self, nota1, nota2, nota3, nota4):
-        self.nota1 = nota1
+class Media(): # Criando a classe
+    def __init__(self, nota1, nota2, nota3, nota4): # Metodo construtor
+        self.nota1 = nota1 # Atributos
         self.nota2 = nota2
         self.nota3 = nota3
         self.nota4 = nota4
         
-    def resultado_media(self, nota1, nota2, nota3, nota4):
+    def resultado_media(self, nota1, nota2, nota3, nota4): # metodo para fazer a media
         media_geral = (nota1 + nota2 + nota3 + nota4) / 4
         
         return media_geral
@@ -27,7 +27,7 @@ nota3 = float(input('Digite a 3° nota: '))
 nota4 = float(input('Digite a 4° nota: '))
 
 
-resultado = Media(nota1, nota2, nota3, nota4)
+resultado = Media(nota1, nota2, nota3, nota4)# variavel recebeno a instancia da classe
 media = resultado.resultado_media(nota1, nota2, nota3, nota4)
 
 #Saida

@@ -4,11 +4,11 @@
 import os
 
 
-class Converter():
-    def __init__(self, real):
-        self.valor = real
+class Converter(): # criando a classe
+    def __init__(self, real): # metodo construtor
+        self.valor = real # atributos
         
-    def compra_dol(self, real):
+    def compra_dol(self, real): # metodo para converter em reais
         dolar = real / 5.65
         
         return dolar
@@ -20,7 +20,7 @@ print('Converter o valor real em dolares')
 print('='*70)
 real = float(input('Coloque o valor da nota em REAL: '))
 
-valor = Converter(real)
+valor = Converter(real) # variavel recebendo a instancia de uma classe
 resultado = valor.compra_dol(real)
 
 print('/'*70)

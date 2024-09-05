@@ -3,15 +3,16 @@
 # Data 03/09/24
 import os
 
-class Converter():
-    def __init__(self, metro):
-        self.metro = metro
+
+class Converter():# Criando a classe
+    def __init__(self, metro): # metodo construtor
+        self.metro = metro # atributos
         
-    def metro_centimetro(self, metro):
+    def metro_centimetro(self, metro): # Metodo para converter em centimetros
         centimetro = metro*100
         return centimetro
         
-    def metro_milimetro(self, metro):
+    def metro_milimetro(self, metro):# Metodo para converter em milimetros
         milimetro = metro*1000
         return milimetro
 
@@ -23,8 +24,10 @@ while True:
     print('Converter centimetros para metros e\n Milimetros para metros')
     print('='*70)
     metro = int(input('Coloque o numero em metros: '))
-    convercao = Converter(metro)
+    convercao = Converter(metro) # variavel recebeno a instancia da classe
     opcao = input('Deseja converter para milimetros(ml)\n ou centimetros(cm?')
+
+    
     if opcao.isnumeric() or opcao == '':
         print('Digite algo valido')
         input('Pressioe enter para voltar')
