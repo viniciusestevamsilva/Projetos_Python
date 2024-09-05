@@ -24,7 +24,7 @@ while True:
     print('Converter centimetros para metros e\n Milimetros para metros')
     print('='*70)
     metro = int(input('Coloque o numero em metros: '))
-    convercao = Converter(metro) # variavel recebeno a instancia da classe
+    convercao = Converter(metro) # variavel recebendo a instancia da classe
     opcao = input('Deseja converter para milimetros(ml)\n ou centimetros(cm?')
 
     

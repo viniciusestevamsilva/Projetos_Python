@@ -27,7 +27,7 @@ nota3 = float(input('Digite a 3° nota: '))
 nota4 = float(input('Digite a 4° nota: '))
 
 
-resultado = Media(nota1, nota2, nota3, nota4)# variavel recebeno a instancia da classe
+resultado = Media(nota1, nota2, nota3, nota4)# variavel recebendo a instancia da classe
 media = resultado.resultado_media(nota1, nota2, nota3, nota4)
 
 #Saida

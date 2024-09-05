@@ -25,7 +25,7 @@ print('='*70)
 dividendo = float(input('Coloque o dividendo: '))
 divisor = float(input('Coloque o divisor: '))
 
-resultado = Quociente(dividendo, divisor)# variavel recebeno a instancia da classe
+resultado = Quociente(dividendo, divisor)# variavel recebendo a instancia da classe
 resto = resultado.resultado(dividendo, divisor)
 
 # Saida

@@ -27,7 +27,7 @@ print('Coloque um numero')
 print('-'*70)
 numero = int(input('Digite um numero: '))
 
-resposta = Sucessor_anterior(numero) # Variavle recebdno a instancia da classe
+resposta = Sucessor_anterior(numero) # Variavle recebendo a instancia da classe
 sucessor = resposta.resultado_sucessor(numero)
 anterior = resposta.resultado_anterior(numero)
 
