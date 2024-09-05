@@ -21,7 +21,7 @@ print('='*70)
 real = float(input('Coloque o valor da nota em REAL: '))
 
 valor = Converter(real) # variavel recebendo a instancia de uma classe
-resultado = valor.compra_dol(real)
+resultado = valor.compra_dol(real) # Chamando o metodo 
 
 print('/'*70)
 print('')

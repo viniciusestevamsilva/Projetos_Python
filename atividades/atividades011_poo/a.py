@@ -60,8 +60,8 @@ while True:
     c = float(c)
     
     resultado = Conta(a, b, c)  # Criando um objeto
-    adicao = resultado.soma(a, b, c)
-    vezes = resultado.multiplicar(a, b, c)
+    adicao = resultado.soma(a, b, c) # Chamando o metodo 
+    vezes = resultado.multiplicar(a, b, c) # Chamando o metodo 
     
     opcao = str(input('Você deseja Somar ou multiplicar (s/m)?\n(caso queira sair digite, "n") ')).lower()
     

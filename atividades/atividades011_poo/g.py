@@ -34,7 +34,7 @@ while True:
         
     if opcao == 'cm':
         
-        cm = convercao.metro_centimetro(metro)
+        cm = convercao.metro_centimetro(metro) # Chamando o metodo 
         
         os.system('cls')
         
@@ -45,7 +45,7 @@ while True:
         
     elif opcao == 'ml':
         
-        ml = convercao.metro_milimetro(metro)
+        ml = convercao.metro_milimetro(metro)# Chamando o metodo 
         
         os.system('cls')
         

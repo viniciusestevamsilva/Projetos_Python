@@ -29,6 +29,6 @@ os.system('cls')
     
 print('-'*70)
 print()
-print('Resultado')
+print('Resultado')  # Chamando o metodo 
 print(f'voce tem {data.idade(nascimento)} de anos')
 print('/'*70)

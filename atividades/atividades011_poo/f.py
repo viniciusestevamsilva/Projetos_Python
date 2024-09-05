@@ -24,8 +24,8 @@ print('='*70)
 numero = int(input('Coloque o numero aqui: '))
 
 resposta = Conta(numero) # variavel recebendo a instancia da classe
-x2 = resposta.dobro(numero)
-x3 = resposta.triplo(numero)
+x2 = resposta.dobro(numero) # Chamando o metodo 
+x3 = resposta.triplo(numero) # Chamando o metodo 
 
 print('-'*70)
 print('')

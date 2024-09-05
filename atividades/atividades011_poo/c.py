@@ -28,7 +28,7 @@ nota4 = float(input('Digite a 4° nota: '))
 
 
 resultado = Media(nota1, nota2, nota3, nota4)# variavel recebendo a instancia da classe
-media = resultado.resultado_media(nota1, nota2, nota3, nota4)
+media = resultado.resultado_media(nota1, nota2, nota3, nota4) # Chamando o metodo 
 
 #Saida
 print('-'*70)

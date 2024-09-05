@@ -25,7 +25,7 @@ altura = float(input('Digite a altura: '))
 largura = float(input('Digite a largura: '))
 
 resposta = Retangulo(altura, largura) # variavel recebendo a instancia de uma classe
-resultado = resposta.calcular(altura, largura)
+resultado = resposta.calcular(altura, largura) # Chamando o metodo 
 
 print('')
 print(f'Seu retangulo possui {resultado:.4f} de pêrimetro')

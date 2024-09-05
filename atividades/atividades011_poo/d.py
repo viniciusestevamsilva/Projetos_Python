@@ -26,7 +26,7 @@ dividendo = float(input('Coloque o dividendo: '))
 divisor = float(input('Coloque o divisor: '))
 
 resultado = Quociente(dividendo, divisor)# variavel recebendo a instancia da classe
-resto = resultado.resultado(dividendo, divisor)
+resto = resultado.resultado(dividendo, divisor) # Chamando o metodo 
 
 # Saida
 print('')

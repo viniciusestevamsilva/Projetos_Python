@@ -30,6 +30,6 @@ while True:
             print(f'Tabuada do {valor} ate 10')
             print('='*70)
             resposta = Tabuada(valor) # variavel recebendo a instancia de uma classe
-            resto = resposta.multiplicar(valor)
+            resto = resposta.multiplicar(valor) # Chamando o metodo 
             print('')
             print('/'*70)
