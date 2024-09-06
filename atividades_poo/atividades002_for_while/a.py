@@ -8,22 +8,25 @@ class Intervalo:
     def __init__(self, comeco, fim):
         self.comeo = comeco
         self.fim = fim
-    
-    def gerador(self, comeco, fim):
-        comeco = 1
-        fim = 100
-        while comeco <= fim:
-            print(f'numero: {comeco}', end=' | ')
-            comeco += 1
+
+
+class Gerador(Intervalo):
+
+    def de1a100(self, comeco, fim):
+
+        inicio = comeco
+        while inicio <= fim:
+            print(f'numero: {inicio}', end='  ')
+            inicio += 1
+            
+
 
 os.system('cls')
-print('-'*70)
-print('Mesma coisa de antes com input')
-print('='*70) 
+print('/'*70)
+print('Imprimir numeros de 1 a 100')
+print('='*70)
 
-comeco = int(input('Digite o valor inicial: '))
-fim = int(input('Digite o valor final: '))
-
-gerador = Intervalo(comeco, fim)
-resultado =  gerador.gerador(comeco, fim)
-print('-'*70)
+gerador = Gerador(1, 100)
+resultado = gerador.de1a100(1, 100)
+print('')
+print('/'*70)
