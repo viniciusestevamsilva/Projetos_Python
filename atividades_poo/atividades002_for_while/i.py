@@ -2,7 +2,7 @@
 # Autor : Vinícius Estevam da Silva
 # Data 06/09/2024
 import os
-
+ # IMCOMPLETA EST DANDO ERRO
 
 class Loop:
     def __init__(self, em_loop):
