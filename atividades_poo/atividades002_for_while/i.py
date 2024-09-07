@@ -11,17 +11,19 @@ class Loop:
 
 class Fparasair(Loop):
     def laco(self):
-        while (True):
+        while True:
+
             # tranformar tudo digitado em minusculo e Entrada
     
             # Condicional e Saída
-            if (nome != 'f'):
+            if nome != 'f':
                 print('Estou em looping... para sair digite "f"')
+                nome = str(input('Digite um nome [digite "f" para Sair]: ')).lower()
             else:
                 print('-'*70)
                 print('Você digitou "f" para sair do looping!')
-                
                 break
+                
 
 os.system('cls')
 
@@ -30,5 +32,4 @@ print('Digitar f ate sair, se não continua em looping')
 print('-'*70)
 nome = str(input('Digite um nome [digite "f" para Sair]: ')).lower()
 
-estourodando = Fparasair(nome)
-looping = estourodando.laco(nome)
+looping = Fparasair.laco(nome)
