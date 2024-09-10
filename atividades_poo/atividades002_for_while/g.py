@@ -1,15 +1,17 @@
+# Curso Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
+# Data 09/09/2024
 import os
 
 
-os.system('cls')
 
-class Intervalo:
+class Numeros:
     def __init__(self, inicio, final):
         self.inicio = inicio
         self.final = final
         
-class Primos(Intervalo):
-    def descobrir_par(self,inicio, final):
+class Primos(Numeros):
+    def par(self,inicio, final):
         
         inicio = 3
         fim = 100
@@ -21,10 +23,12 @@ class Primos(Intervalo):
                     break
             else:
                 print(f'{numero_primo}', end=" | ")
- 
-inicio = int(input('Digite o valor inicial do intervalo: '))
-final = int(input('Digite o valor final do intervalo: '))
-print('-'*70)
+
+os.system('cls')
+print('/'*70)
+inicio = int(input('Digite o valor inicial: '))
+final = int(input('Digite o valor final: '))
+print('='*70)
 
 resultados = Primos(inicio,final)
-numeros_impares = resultados.descobrir_par(inicio,final)
+impar = resultados.par(inicio,final)

@@ -1,28 +1,31 @@
+# Curso Desenvolvimento de sistemas
+# Autor : Vinícius Estevam da Silva
+# Data 09/09/2024
 import os
 
 
-os.system('cls')
 
-class Intervalo:
-    def __init__(self, inicio, final):
+class Numeros:
+    def __init__(self, inicio):
         self.inicio = inicio
-        self.final = final
+
         
-class Primos(Intervalo):
-    def descobrir_par(self,inicio, final):
+class Primos(Numeros):
+    def par(self,inicio):
         
         inicio = 3
         fim = 100
         contador = inicio
         
-        for numero_primo in range(contador, fim):
-            for divisor in range(2, int(numero_primo**0.5) + 1):
-                if numero_primo % divisor == 0:
+        for primo in range(contador, fim):
+            for divisor in range(2, int(primo**0.5) + 1):
+                if primo % divisor == 0:
                     break
             else:
-                print(f'{numero_primo}', end=" | ")
+                print(f'{primo}', end=" | ")
+    print('/'*70)
  
+os.system('cls')
 
-
-resultados = Primos(0,100)
-numeros_impares = resultados.descobrir_par(0,100)
+resultado = Primos(0,100)
+impar = resultado.par(0,100)
