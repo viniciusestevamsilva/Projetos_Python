@@ -11,7 +11,10 @@ class Intervalo:
 
 
 class Gerador(Intervalo):
-
+    def __init__(self, comeco, fim):
+        self.comeco = comeco
+        self.fim = fim
+        
     def de1a100(self, comeco, fim):
 
         inicio = comeco

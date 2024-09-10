@@ -5,27 +5,40 @@ import os
 
 
 class Pares:
-    def __init__(self ,numero):
-        self.numero = numero
+    def __init__(self):
+        # Inicializa com valores padrão
+        self.numero = 0
+        self.numero_final = 100
+
+    def processa(self):
+        # Método base que pode ser sobrescrito
+        pass
 
 class Num_pares(Pares):
-    def conta(self):
-        
-        while (contador <= 100):
-        
-            contador += 1 
-            
-            if (contador % 2 == 0): 
-                print(f'numero par:{contador}')
-        
-    
+    def __init__(self, numero_inicial, numero_final):
+        # Inicializa com valores padrão e configura os atributos
+        self.numero = numero_inicial
+        self.numero_final = numero_final
 
+    def conta(self):
+        # Contar e imprimir números pares entre numero e numero_final
+        while self.numero <= self.numero_final:
+            if self.numero % 2 == 0:
+                print(f'Número par: {self.numero}')
+            self.numero += 1
+
+# Limpa a tela
 os.system('cls')
 
-print('/'*70)
+print('/' * 70)
 print('Imprimindo Números somente pares entre 0 e 100')
-print('='*70) 
+print('=' * 70) 
 
-par = Num_pares.conta()
+# Cria uma instância da classe Num_pares
+par = Num_pares(0, 100)  # Inicializa com o número inicial e final
 
-print('/'*70)
+# Conta e imprime os números pares
+par.conta()
+
+print('/' * 70)
+

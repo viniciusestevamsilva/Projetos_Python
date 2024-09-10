@@ -10,14 +10,20 @@ class Numeros:
         self.inicio = inicio
         self.final = final
         
+    def contador(self, contador):
+        self.contador = contador
+        
+        contador = 0
+        pass
+        
 class Primos(Numeros):
     def par(self,inicio, final):
         
-        inicio = 3
-        fim = 100
-        contador = inicio
+        inicio = 2
+        fim = final
+        self.contador = inicio
         
-        for numero_primo in range(contador, fim):
+        for numero_primo in range(self.contador, fim):
             for divisor in range(2, int(numero_primo**0.5) + 1):
                 if numero_primo % divisor == 0:
                     break

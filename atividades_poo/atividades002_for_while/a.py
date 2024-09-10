@@ -6,20 +6,23 @@ import os
 
 class Intervalo:
     def __init__(self, comeco, fim):
-        self.comeo = comeco
+        self.comeco = comeco
         self.fim = fim
 
+         
 
 class Gerador(Intervalo):
-
+    def __init__(self, comeco, fim):
+        self.comeco = comeco
+        self.fim = fim
+        
     def de1a100(self, comeco, fim):
 
         inicio = comeco
         while inicio <= fim:
             print(f'numero: {inicio}', end='  ')
             inicio += 1
-            
-
+   
 
 os.system('cls')
 print('/'*70)

@@ -14,17 +14,25 @@ class Ignorando:
         print('/'*70)
         print('3 Números seram ignorado')
         print('='*70)
+        
+    
+    def contador(self, contador):
+        self.contador = contador
+        
+        contador = 0
+        pass
 
 class Numeros(Ignorando):
     def separador(self, ignorado1, ignorado2, ignorado3):
         
-        contador = comeco
-    
-        while contador <= final:
+        self.contador = comeco
+        print('='*70)
+        while self.contador <= final:
         # Ignora os números que o usuario digitou
-            if contador != ignorado1 and contador != ignorado2 and contador != ignorado3:
-                print(f'{contador}', end= ' ')
-            contador += 1
+            if self.contador != ignorado1 and self.contador != ignorado2 and self.contador != ignorado3:
+                print(f'{self.contador}', end= ' ')
+            self.contador += 1
+            print('/'*70)
 
 os.system('cls')
 enunciado = print

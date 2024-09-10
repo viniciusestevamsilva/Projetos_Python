@@ -6,18 +6,24 @@ import os
 
 
 class Numeros:
-    def __init__(self, inicio):
+    def __init__(self, inicio, final):
         self.inicio = inicio
-
+        self.final = final
+        
+    def contador(self, contador):
+        self.contador = contador
+        
+        contador = 0
+        pass
         
 class Primos(Numeros):
-    def par(self,inicio):
+    def par(self, inicio, final):
         
-        inicio = 3
-        fim = 100
-        contador = inicio
+        inicio = 0
+        final = 100
+        self.contador = inicio
         
-        for primo in range(contador, fim):
+        for primo in range(self.contador, final):
             for divisor in range(2, int(primo**0.5) + 1):
                 if primo % divisor == 0:
                     break

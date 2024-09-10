@@ -11,7 +11,10 @@ class Intervalo:
 
 
 class Invertido(Intervalo):
-
+    def __init__(self, comeco, fim):
+        self.comeco = comeco
+        self.fim = fim
+        
     def inverso(self, comeco, fim):
 
         final = fim
