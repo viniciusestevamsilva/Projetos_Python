@@ -6,24 +6,33 @@ import os
 
 class Numeros:
     def __init__(self, comeco):
-        self.comeco = int(comeco)
+        self.comeco = comeco
+        
         
     def enunciado(self):
         print('/'*70)
         print('Imprimir de 0 a 100 somente numeros impares')
         print('='*70)
+    
+    def contador(self):
+        pass
         
         
 class Impar(Numeros):
-    def contador(self):
-        comeco = 1 
+    def __init__(self, comeco):
+        self.comeco = comeco
         
-        while (comeco <= 100):
-            
-            comeco += 1
-            if (comeco % 2 != 0):
-                print(f'{comeco}', end= '   ')
-
+        
+    def contador(self):
+        soma = 0
+        quantidade = 0
+        
+        for i in range(int(self.comeco), 100):
+            if (i % 2 != 0):
+                print(f'{i}', end= '   ')
+                soma += i
+                quantidade += 1
+        return soma, quantidade
 
             
 os.system('cls')
@@ -31,5 +40,8 @@ os.system('cls')
 
 enunciado = print
 enunciado = Numeros.enunciado(enunciado)
-comeco = int
-contagem = Impar.contador(comeco)
+comeco = input('Digite o valor inicial do intervalo: ')
+qualquer = Impar(comeco)
+soma, quatidade = Impar.contador(comeco)
+print()
+print(soma, quatidade)

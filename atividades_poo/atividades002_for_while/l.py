@@ -5,16 +5,17 @@ import os
 
 
 class Dados:
-    def __init__(self, nome,senha):
+    def __init__(self, nome, senha, seuID):
         self.nome = nome
         self.senha = senha
+        self.seuID = seuID
         
 
 class Info(Dados):
-    def infomacoes(nome, senha):
+    def infomacoes(nome, senha, seuID):
         while (True):
-            cadastro = nome + senha
-            
+            cadastro = nome + senha + seuID
+            print('='*70)
             dados = str(input('Digite dados [digite sua "senha" e "nome" para Sair]: ')).lower()
             
             if (dados != cadastro):
@@ -26,14 +27,15 @@ class Info(Dados):
                 
                 break
                 
-print('-'*70)
+print('/'*70)
 print('Digitar seus dados para sair')
-print('-'*70)
+print('='*70)
+print('')
 
-
-senha = (input('Digite sua senha: '))
 nome = (input('Digite seu nome: '))
+senha = (input('Digite sua senha: '))
+seuID = (input('Digite seu ID: '))
 
-verificar = Info.infomacoes(nome, senha)
+verificar = Info.infomacoes(nome, senha, seuID)
 
-print('-'*70)
+print('/'*70)
