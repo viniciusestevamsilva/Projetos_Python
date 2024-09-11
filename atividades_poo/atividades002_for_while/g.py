@@ -4,12 +4,11 @@
 import os
 
 
-
 class Numeros:
     def __init__(self, inicio, final):  # Método construtor
-        self.inicio = inicio # Atributos
+        self.inicio = inicio  # Atributos
         self.final = final
-        
+
 class Primos(Numeros):
     def calcular_primos(self):
         primos = []
@@ -29,10 +28,11 @@ inicio = int(input('Digite o valor inicial: '))
 final = int(input('Digite o valor final: '))
 print('='*70)
 
-
-resultados = Primos(inicio, final) # Cria uma instância da classe 
-primos = resultados.calcular_primos() # Chama o método
+resultados = Primos(inicio, final)  # Cria uma instância da classe 
+primos = resultados.calcular_primos()  # Chama o método
 
 print(f'Números primos entre {inicio} e {final}:')
 for primo in primos:
-    print(primo)
+    print(f'{primo}', end=' ')
+print()
+print('/'*70)
