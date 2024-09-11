@@ -4,19 +4,17 @@
 import os
 
 
-class Loop:
-    def __init__(self, em_loop):
-        self.em_loop = em_loop
-        
+class Loop: # Classe Pai
+    def __init__(self, em_loop): # Metodo construtor
+        self.em_loop = em_loop # aributos
         
 
-class Fparasair(Loop):
-    def laco(self):
+class Fparasair(Loop): # Classe filha 
+    def laco(self): # Metodo
         while True:
 
-            # tranformar tudo digitado em minusculo e Entrada
             nome = str(input('Digite um nome [digite "f" para Sair]: ')).lower()
-            # Condicional e Saída
+
             if nome != 'f':
                 print('Estou em looping... para sair digite "f"')
             else:
