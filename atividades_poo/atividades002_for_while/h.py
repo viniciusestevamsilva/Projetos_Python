@@ -34,8 +34,7 @@ class Numeros(Ignorando): # classe filha
         print()
         print('/' * 70)
 
-# Clear screen based on OS
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls')
 
 
 ignorando = Ignorando(0, 0, 0)  # Cria uma instância da classe 
@@ -48,6 +47,6 @@ ignorado1 = int(input("Digite o 1º que será ignorado: "))
 ignorado2 = int(input("Digite o 2º que será ignorado: "))
 ignorado3 = int(input("Digite o 3º que será ignorado: "))
 
-# Create an instance of Numeros and call separador
+
 ignorados = Numeros(ignorado1, ignorado2, ignorado3)
 ignorados.separador(comeco, final)
