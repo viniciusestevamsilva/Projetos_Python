@@ -4,45 +4,50 @@
 import os
 
 
-class Ignorando:
-    def __init__(self, ignorado1, ignorado2, ignorado3):
-        self.ignorado1 = int(ignorado1)
+import os
+
+class Ignorando: # classe pai
+    def __init__(self, ignorado1, ignorado2, ignorado3):   # Método construtor
+        self.ignorado1 = int(ignorado1)  # Atributos
         self.ignorado2 = int(ignorado2)
         self.ignorado3 = int(ignorado3)
 
     def enunciado(self):
-        print('/'*70)
-        print('3 Números seram ignorado')
-        print('='*70)
         
-    
-    def contador(self, contador):
-        self.contador = contador
-        
-        contador = 0
-        pass
+        print('/' * 70)
+        print('3 Números serão ignorados')
+        print('=' * 70)
 
-class Numeros(Ignorando):
-    def separador(self, ignorado1, ignorado2, ignorado3):
+class Numeros(Ignorando): # classe filha
+    
+    def separador(self, comeco, final):
+        print('=' * 70)
         
         self.contador = comeco
-        print('='*70)
+        
         while self.contador <= final:
-        # Ignora os números que o usuario digitou
-            if self.contador != ignorado1 and self.contador != ignorado2 and self.contador != ignorado3:
-                print(f'{self.contador}', end= ' ')
+            
+            if self.contador != self.ignorado1 and self.contador != self.ignorado2 and self.contador != self.ignorado3:
+                print(f'{self.contador}', end=' ')
             self.contador += 1
-            print('/'*70)
+            
+        print()
+        print('/' * 70)
 
-os.system('cls')
-enunciado = print
-enunciado = Ignorando.enunciado(enunciado)
+# Clear screen based on OS
+os.system('cls' if os.name == 'nt' else 'clear')
 
-comeco = int(input("Digite o numero do começo do intervalo: "))
-final = int(input("Digite o numero final do intervalo: "))
-ignorado1 = int(input("Digite o 1º que sera ignorado: "))
-ignorado2 = int(input("Digite o 2º que sera ignorado: "))
-ignorado3 = int(input("Digite o 3º que sera ignorado: "))
 
+ignorando = Ignorando(0, 0, 0)  # Cria uma instância da classe 
+ignorando.enunciado()  # Chama o método
+
+# Input numbers
+comeco = int(input("Digite o número do começo do intervalo: "))
+final = int(input("Digite o número final do intervalo: "))
+ignorado1 = int(input("Digite o 1º que será ignorado: "))
+ignorado2 = int(input("Digite o 2º que será ignorado: "))
+ignorado3 = int(input("Digite o 3º que será ignorado: "))
+
+# Create an instance of Numeros and call separador
 ignorados = Numeros(ignorado1, ignorado2, ignorado3)
-resultado = ignorados.separador(ignorado1, ignorado2, ignorado3)
+ignorados.separador(comeco, final)
