@@ -31,4 +31,4 @@ print('Digitar f ate sair, se não continua em looping')
 print('='*70)
 nome = str
 
-looping = Fparasair.laco(nome)
+looping = Fparasair.laco(nome)   # Cria uma instância da classe e chama o metodo
