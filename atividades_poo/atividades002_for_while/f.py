@@ -29,9 +29,14 @@ class Primos(Numeros):
                     break
             else:
                 print(f'{primo}', end=" | ")
+        print()
     print('/'*70)
  
 os.system('cls')
-
+print('/'*70)
+print('imprimir os números primos entre 0 e 100')
+print('='*70)
 resultado = Primos(0,100)
 impar = resultado.par(0,100)
+print()
+print('/'*70)
