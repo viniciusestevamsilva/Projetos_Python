@@ -6,12 +6,14 @@ import os
 
 class Intervalo:
     def __init__(self, comeco, fim):
-        self.comeo = comeco
+        # Método construtor
+        self.comeo = comeco # Atributos
         self.fim = fim
 
 
 class Invertido(Intervalo):
     def __init__(self, comeco, fim):
+        # Construtor da classe que inicializa os atributos
         self.comeco = comeco
         self.fim = fim
         
@@ -19,17 +21,18 @@ class Invertido(Intervalo):
 
         final = fim
         while final >= comeco:
-            print(f'numero: {final}', end='  ')
+            print(f'{final}', end='  ')
             final -= 1
             
 
 
 os.system('cls')
 print('/'*70)
-print('Imprimir numeros de 1 a 100')
+print('Imprimir numeros de 1 a 10\nem ordem reversa')
 print('='*70)
 
-gerador = Invertido(0, 10)
-resultado = gerador.inverso(0, 10)
+# Cria uma instância da classe
+gerador = Invertido(1, 10)
+resultado = gerador.inverso(1, 10) # Chama o método
 print('')
 print('/'*70)
