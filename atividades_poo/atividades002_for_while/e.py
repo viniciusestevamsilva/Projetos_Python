@@ -6,8 +6,8 @@ import os
 
 
 class Intervalo:
-    def __init__(self, inicio, final):
-        self.inicio = inicio
+    def __init__(self, inicio, final): # Método construtor
+        self.inicio = inicio # Atributos
         self.final = final
         
 class Pares(Intervalo):
@@ -26,6 +26,10 @@ class Pares(Intervalo):
         print('/'*70)
      
      
-os.system('cls')   
-resultados = Pares(0, 100)
-pares = resultados.par(0, 100)
+os.system('cls')
+print('/'*70)
+print('Somar a quantidade de números pares\nencontrados no intervalo entre 0 e 100.')
+print('='*70)
+print()
+resultados = Pares(0, 100)# Cria uma instância da classe 
+pares = resultados.par(0, 100)# Chama o método
