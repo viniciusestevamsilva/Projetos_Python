@@ -3,7 +3,7 @@
 # Data 09/09/2024
 import os
 
-class Dados:
+class Dados: # Classe Pai
     def __init__(self, nome, senha, seuID):
         self.nome = nome
         self.senha = senha
@@ -12,7 +12,7 @@ class Dados:
     def obter_cadastro(self):
         return self.nome + self.senha + self.seuID
 
-class Info:
+class Info: # Classe Filha
     def __init__(self, nome, senha, seuID):
         self.nome = nome
         self.senha = senha
@@ -24,7 +24,7 @@ class Info:
             print('=' * 70)
             dados = input('Digite os dados [digite sua "senha" e "nome" para sair]: ').lower()
             
-            if dados != self.cadastro.lower():  # Comparar em minúsculas para consistência
+            if dados != self.cadastro.lower(): 
                 print('Estou armazenando dados. Para sair, digite os dados do cadastro.')
                 print('=' * 70)
             else:
@@ -34,7 +34,6 @@ class Info:
 
 os.system('cls')
 
-# Execução principal
 print('/' * 70)
 print('Digite seus dados para sair')
 print('=' * 70)
@@ -44,10 +43,9 @@ nome = input('Digite seu nome: ').lower()
 senha = input('Digite sua senha: ').lower()
 seuID = input('Digite seu ID: ').lower()
 
-# Criar uma instância de Info com os dados fornecidos
+# Criar uma instância 
 info = Info(nome, senha, seuID)
 
-# Chamar o método para solicitar e verificar dados do usuário
-info.dados()
+info.dados()# Chama o método
 
 print('/' * 70)
