@@ -5,11 +5,11 @@
 import os
 
 
-class Palindromo:
-    def __init__(self, palindromo):
-        self.palindromo = palindromo
+class Palindromo: # Classe Pai
+    def __init__(self, palindromo): # Metodo construtor
+        self.palindromo = palindromo # Atributos
         
-class Invertido(Palindromo):
+class Invertido(Palindromo): # Classe Filha
     def verificando(self):
         
         if frase == frase[::-1]:
@@ -25,12 +25,11 @@ class Invertido(Palindromo):
 
 os.system('cls')
 
-# Entrada
+
 print('/'*70)
 print('Verificando se é palindromo ou não')
 print('='*70)
 
 frase = str(input('Digite uma palavra ou frase: '))
 
-# Transformando em minusculo
-Palindromo = Invertido.verificando(frase)
+Palindromo = Invertido.verificando(frase)# Cria uma instância da classe 
