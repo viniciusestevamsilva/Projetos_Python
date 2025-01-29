@@ -9,7 +9,7 @@
 ###
 
 <h4 align="left"> 2024 - Python
-<h5 align="rigth">Vinícius Estevam da Silva
+<h5 align="right">Vinícius Estevam da Silva
   
 <br clear="both">
 
