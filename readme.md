@@ -18,8 +18,8 @@
 ###
 
 <div align="left">
-  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" height="50" alt="python logo"  />
-  <img width="40" />
+  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" height="90" alt="python logo"  />
+  <img width="60" />
 <div/>
 
   ###
